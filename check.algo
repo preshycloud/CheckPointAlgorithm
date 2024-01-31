@@ -1,0 +1,36 @@
+Problem 1
+
+Algorithm FindDistinctSum(set1, set2)
+Input: Two sets set1 and set2 (arrays)
+Output: Sum of distinct elements from both sets
+
+1. Initialize an empty array result[]
+2. Initialize sum = 0
+3. Iterate through each element x in set1:
+   a. If x is not in result[], add x to result[] and increment sum by x
+4. Iterate through each element y in set2:
+   a. If y is not in result[], add y to result[] and increment sum by y
+5. Return the sum
+
+
+Problem 2
+
+Algorithm DotProduct(v1, v2)
+Input: Two vectors v1 and v2 (arrays)
+Output: Dot product of v1 and v2
+
+1. Initialize ps (dot product) = 0
+2. For i from 0 to length of v1:
+   a. Multiply v1[i] with v2[i] and add the result to ps
+3. Return ps
+
+Algorithm AreVectorsOrthogonal(vectors)
+Input: Array of vector pairs (vectors)
+Output: Array indicating whether each vector pair is orthogonal (boolean values)
+
+1. Initialize an empty array results[]
+2. For each vector pair (v1, v2) in vectors:
+   a. Calculate dot product using DotProduct(v1, v2)
+   b. If the dot product is 0, add true to results[] (vectors are orthogonal)
+      Else, add false to results[] (vectors are not orthogonal)
+3. Return results[]
